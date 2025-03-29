@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+/* This ensures element are sized. I was first introduced to this when doing the sustainibility website */
+/* Body */
+body {
+    /* Sets the font size to Arial. If Arial isn't available, the default is sans-serif */
+    font-family: 'Arial', sans-serif;
+    /* Removes default margin */
+    margin: 0;
+    /* Adds space between the contents in the page */
+    padding: 20px;
+    /* The background color is light grey */
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+h2 {
+    color: #2C3E50;
+    /*  Defines the font size of h2 elements */
+    font-size: 24px;
+    /* Adds space at the bottom of h2 element */
+    margin-bottom: 10px;
+}
+
+/* Home Page Image */
+main img {
+    width: 400px;
+    height: 300px;
+    /* Rounds the corner of the image with a 10px radius */
+    border-radius: 10px;
+}
+
+
+/* Header */
+header {
+        display: flex;
+        /* Aligns the items in the center */
+        align-items: center;
+         /* Makes the space between the items evenly separated */
+        justify-content: space-between;
+        background-color: white;
+         /* Adds 10px padding to the top and bottom, and 50px on the left and right */
+        padding: 10px 50px;
+}
+header img {
+    height: 80px;
+      /* Setting the width to auto allows the image to scale proportionally to the page */
+    width: auto;
+    
+}
+   /* This a flexbox that will arrange the header content. I got this information from: https://www.w3schools.com/css/css3_flexbox_container.asp /* Footer */
+
+
+/* Footer */
+footer {
+    background-color: #248574;
+    color: white;
+    /* Aligns the text to the left */
+    text-align: left;
+    padding: 10px;
+    /* Adds margin for space above footer */
+    margin-top: 40px;
+    /* Positions the footer relatively within the document flow */
+    position: relative;
+    /* Makes sure footer stays at the bottom. I got this from this link https://www.w3schools.com/cssref/pr_pos_bottom.php */
+    bottom: 0;
+    /* Makes footer span the entire width of the page */
+    width: 100%;
+}
+
+footer h3 {
+    /* Adds space below heading */
+    margin-bottom: 10px;
+}
+
+footer p {
+    /* Adds 5px margin */
+    margin: 5px 0;
+}
+
+/* Navbar*/
+
+nav ul {
+    /* Removes bullet points from list */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    /* Uses flexbox to display items */
+    display: flex;
+    /* Adds space between each item */
+    gap: 20px;
+}
+
+
+
+nav a {
+    /* Makes the links take up more space */
+    display: inline-block;
+    padding: 1rem;
+    color: #248574;
+    /* Removes default underline from links */
+    text-decoration: none;
+    /* Emphasizes the navigation links by making them bold */
+    font-weight: bold;
+}
+
+nav a:hover {
+    /* Changes the background color to teal when hovering the cursor over it */
+    background-color: #248574;
+    /* Changes the text color to white when hovering over it */
+    color: white;
+}
